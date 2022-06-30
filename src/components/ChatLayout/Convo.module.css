@@ -1,0 +1,24 @@
+.convo {
+    flex: 1;
+    z-index: 100;
+    overflow-y: auto;
+    padding: 2rem 4rem 3.2rem 4rem;
+    position: relative;
+}
+
+/* .button {
+    width: 4.2rem;
+    height: 4.2rem;
+    /* padding: 0.5rem; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    bottom: 78px;
+    z-index: 100;
+    background-color: #262d31;
+    border: none;
+    cursor: pointer;
+} */

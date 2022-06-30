@@ -1,0 +1,77 @@
+.header {
+    height: 6rem;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    z-index: 1000;
+    background-color: #202c33;
+}
+
+.details_box {
+    display: flex;
+    flex: 1;
+    gap: 1.2rem;
+    cursor: pointer;
+}
+
+.img-box {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.details {
+    flex: 1;
+}
+
+.details p {
+    color: rgba(241,241,242,.92);
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.details span {
+    color: rgba(241,241,242,.63);
+    font-size: 1.2rem;
+}
+
+.btns {
+    display: flex;
+    gap: 3.2rem;
+    margin-right: 4rem;
+    align-items: center;
+}
+
+.btns button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.last{
+    transform: translateY(5%);
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.last.active {
+    background-color: #20272b;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+
+.button_wrapper {
+    position: relative;
+}

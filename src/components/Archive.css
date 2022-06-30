@@ -1,0 +1,41 @@
+.archive {
+    transition: all .2s ease-in-out;
+    background-color: #111b21;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.archive.active {
+    width: 100%;
+    opacity: 1;
+}
+.header {
+    background-color: #202c33;
+    height: 10rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 5rem 0 1rem 3rem;
+}
+.header p {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-box {
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

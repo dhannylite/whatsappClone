@@ -1,0 +1,14 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-right: 1px solid #dadada;
+    border-right-color: #6a6d70;
+    z-index: 0;
+    /* width: 100%; */
+    /* transition: all 1s ease-in; */
+}
+
+/* .aside.de_active {
+    width: 0;
+} */

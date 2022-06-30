@@ -1,0 +1,145 @@
+.message {
+    color: white;
+    /* text-align: center; */
+}
+
+.date-box {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.encrypt {
+    color: rgb(250, 217, 100);
+    background-color: rgb(32, 39, 43);
+    padding: 0.5rem 1rem;
+    font-size: 1.23rem;
+    line-height: 2;
+    text-align: center;
+    border-radius: 9px;
+    margin-top: 1rem;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.lock {
+    transform: translate(-3px, 0.8px);
+    display: inline-block;
+}
+
+.date {
+    display: inline-block;
+    background-color: #202c33;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.grouped {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+}
+
+
+.sender-img, .reader-img {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #202c33;
+    border-radius: 3px;
+}
+
+.reader-img {
+    background-color: #056162;
+}
+
+.sender-img img, .reader-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.snd, .rdx{
+    max-width: 75%;
+}
+
+.filler {
+    width: 6.5rem;
+    height: 0.3rem;
+}
+
+.sender p, .reader p {
+    display: flex;
+    padding: 6px 7px 8px 9px;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #202c33;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    position: relative;
+    margin-bottom: 1rem;
+    white-space: pre-line;
+}
+
+.footer{
+    font-size: 1rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: rgba(241,241,242,.63);
+}
+
+.rdx {
+    align-self: flex-end;
+}
+
+.reader p {
+    background-color: #056162;
+}
+
+.sender p::before, .sender-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.6rem;
+    border: 6px solid black;
+    border-color: #202c33 transparent transparent transparent;
+}
+
+.btn {
+    border: none;
+    background-color: #262d31;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.sender p:hover .btn, .reader p:hover .btn {
+    opacity: 1;
+}
+
+.reader p .btn {
+    background-color: #056162;
+}
+
+.reader p::before, .reader-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -0.6rem;
+    border: 6px solid black;
+    border-color: #056162 transparent transparent transparent;
+}
+
+.reader-img .footer, .sender-img .footer {
+    color: #fff;
+}
